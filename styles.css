@@ -21,3 +21,8 @@ marquee{
 #Band1{
   margin-left: 50%;
 }
+#result {
+  text-align: center; /* Center the text horizontally */
+  margin-top: 20px; /* Adjust the top margin as needed */
+}
+
