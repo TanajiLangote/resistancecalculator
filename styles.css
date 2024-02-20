@@ -1,26 +1,49 @@
-	body{
-	  background-color: yellow;
-	}
-	
-		.bandi, .bandii, .bandiii, .bandiv, .bandv {
-			margin-left: 80px;
-			align:center;
-  margin-top: 200px;
+/* Global styles */
+body {
+  background-color: yellow;
+  margin: 0; /* Reset default margin */
+  padding: 0; /* Reset default padding */
+}
+
+/* Header styles */
+marquee {
+  background-color: blue;
+  color: pink;
+  padding: 10px 0; /* Add padding to the top and bottom */
+  text-align: center;
+}
+.band i,.band ii, .band iii{
+  marging-left: 10px;
+}
+
+/* Container for band selectors */
+.container {
+  text-align: center; /* Center the container horizontally */
+  padding: 20px; /* Add padding for better spacing */
+  box-sizing: border-box; /* Include padding in element's total width/height */
+}
+
+/* Styles for band selectors */
+.band-select {
+  margin: 20px;
   display: inline-block;
 }
-img{
-//  margin-left:50px;
-display: flex;
-  align-items: center;
-  margin-left: 50%;
-}
-marquee{
-  background-color:blue;
-  color: pink;
-}
 
+/* Result text */
 #result {
   text-align: center; /* Center the text horizontally */
-  margin-top: 20px; /* Adjust the top margin as needed */
+  margin-top: 20px; /* Add margin for spacing */
 }
 
+/* Media query for adjusting layout on smaller screens */
+@media (max-width: 1024px) {
+  img {
+    max-width: 80%; /* Reduce image size for smaller screens */
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+  }
+
+  .container {
+    margin-top: 20px; /* Adjust margin for smaller screens */
+  }
+}
